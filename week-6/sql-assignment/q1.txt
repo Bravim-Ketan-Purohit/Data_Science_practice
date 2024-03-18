@@ -1,0 +1,18 @@
+Q1. What is a database? Differentiate between SQL and NoSQL databases.
+
+A database is a structured collection of data that is organized and stored in a way that enables efficient retrieval, updating, and management of that data. It serves as a central repository for various types of information, ranging from simple lists to complex multimedia files. Databases are commonly used in various applications such as websites, enterprise systems, mobile apps, and more.
+
+1. --> SQL Databases:
+
+Data Model: SQL databases, also known as relational databases, organize data into structured tables with rows and columns. Each table represents an entity, and relationships between entities are established using foreign keys.
+Query Language: SQL databases use SQL as their query language. SQL allows users to define, manipulate, and query data using commands like SELECT, INSERT, UPDATE, DELETE, and JOIN.
+Scalability: Traditional SQL databases are typically vertically scalable, meaning you can increase their capacity by upgrading the hardware (e.g., adding more CPU, RAM, or storage) of a single server.
+Examples: MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
+
+
+2. --> NoSQL Databases:
+
+Data Model: NoSQL databases employ various data models, including document-oriented, key-value, wide-column, and graph-based models. They are designed to handle unstructured, semi-structured, and polymorphic data.
+Query Language: NoSQL databases may use different query languages specific to their data model, but they often lack the standardized query language provided by SQL.
+Scalability: NoSQL databases are generally horizontally scalable, meaning they can handle increasing loads by adding more servers to a distributed system. This makes them well-suited for handling large volumes of data and high throughput.
+Examples: MongoDB (document-oriented), Redis (key-value), Cassandra (wide-column), Neo4j (graph).

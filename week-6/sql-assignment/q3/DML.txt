@@ -1,0 +1,6 @@
+DML stands for Data Manipulation Language. It's a subset of SQL (Structured Query Language) used for manipulating data within database objects like tables. DML commands are used to insert, update, and delete records in a database.
+
+
+INSERT: This command is used to add new records into a table.
+UPDATE: This command is used to modify existing records in a table.
+DELETE: This command is used to remove existing records from a table.

@@ -1,0 +1,1 @@
+DQL stands for Data Query Language. It's a subset of SQL (Structured Query Language) used for querying data from a database. DQL commands are primarily used to retrieve data from one or more tables based on specified criteria.
