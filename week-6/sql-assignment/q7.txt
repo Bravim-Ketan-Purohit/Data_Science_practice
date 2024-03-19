@@ -1,0 +1,37 @@
+When executing an SQL query, the clauses are processed in a specific order.
+
+FROM Clause:
+The FROM clause is evaluated first.
+It specifies the tables involved in the query.
+If the query contains JOIN clauses, the tables are combined by merging rows before processing the FROM clause.
+In statements with JOIN, the JOIN operation predates the FROM clause.
+
+
+WHERE Clause:
+After processing the tables specified in the FROM clause, the WHERE clause is evaluated.
+The WHERE clause filters rows based on specified conditions.
+Rows that don’t satisfy the conditions are discarded, reducing the data to be processed further.
+
+
+GROUP BY Clause (if present):
+If the query includes a GROUP BY clause, it is executed next.
+Data is grouped based on common values in the specified columns.
+The number of rows is reduced to the distinct values in the GROUP BY column.
+This step helps calculate aggregate functions.
+
+
+HAVING Clause (if present):
+If the query has a GROUP BY clause, the HAVING clause is evaluated immediately after GROUP BY.
+The HAVING clause filters the grouped rows based on specified conditions.
+Similar to the WHERE clause, it discards rows that don’t meet the conditions.
+
+
+SELECT Clause:
+The SELECT clause is executed next.
+It computes expressions (such as arithmetic or aggregate functions) and aliases specified in the SELECT clause.
+Computation occurs on the smallest dataset after filtering and grouping operations.
+
+
+DISTINCT Clause (if present):
+The DISTINCT clause is executed after evaluating expressions and aliases.
+It filters out duplicate rows, returning only unique rows.
